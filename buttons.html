@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+
+    <style>
+        body{
+            background: #000;
+        }
+        button {
+            padding: 0xp 10px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            width: 200px;
+            height: 50px;
+        }
+
+        button:before {
+            background-image: url("./Primary.svg");
+            background-size: 100% 100%;
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        button:hover {
+            background-color: #5DADC3;
+        }
+
+
+
+        div{
+            margin-top: 50px;
+            width: 190px;
+            height: 137px;
+            background-color: rgb(40, 57, 37);
+            border-radius: 14px;
+            position: relative;
+        }
+
+        div::before {
+            background-image: url("./zoom_in_effect.svg");
+            background-size: 100% 100%;
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+    </style>
+</head>
+<body>
+    <button>See more</button>
+
+    <div>
+        
+    </div>
+</body>
+</html>
